@@ -1,0 +1,43 @@
+---
+swagger: "2.0"
+info:
+  title: test
+  version: 1.0.0
+  contact: {}
+  license:
+    name: GNU GPLv3
+    url: https://www.gnu.org/licenses/gpl.txt
+paths:
+  /address:
+    get:
+      responses:
+        "200":
+          $ref: '#/responses/check_no'
+      summary: list address
+    post:
+      responses:
+        "200":
+          $ref: '#/responses/check_no'
+      summary: create address
+  /address/(addressid):
+    get:
+      responses:
+        "200":
+          $ref: '#/responses/check_no'
+    put:
+      responses:
+        "200":
+          description: test
+    delete:
+      responses:
+        "200":
+          $ref: '#/responses/check_no'
+definitions:
+  "1":
+    description: ""
+    type: object
+responses:
+  check_no:
+    description: ""
+    examples:
+      application/json: []
