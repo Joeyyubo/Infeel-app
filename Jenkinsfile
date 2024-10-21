@@ -18,7 +18,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         error 'wrong'
       }
